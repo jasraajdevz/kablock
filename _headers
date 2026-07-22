@@ -1,0 +1,15 @@
+# Netlify headers (copied into build/web by `flutter build web`).
+# Keep the entry points uncached so app + PWA updates are always picked up;
+# the hashed assets under /assets and /canvaskit are safe to cache hard.
+/index.html
+  Cache-Control: no-cache
+/flutter_service_worker.js
+  Cache-Control: no-cache
+/flutter_bootstrap.js
+  Cache-Control: no-cache
+/manifest.json
+  Cache-Control: no-cache
+/assets/*
+  Cache-Control: public, max-age=31536000
+/canvaskit/*
+  Cache-Control: public, max-age=31536000
