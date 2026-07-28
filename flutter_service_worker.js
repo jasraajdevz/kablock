@@ -1,6 +1,6 @@
-// Self-destroying service worker — v5. Clears every cache, unregisters itself,
+// Self-destroying service worker — v6. Clears every cache, unregisters itself,
 // and reloads open windows so the newest build loads from the network.
-const KILL_VERSION = 'v5-2026-07-28';
+const KILL_VERSION = 'v6-2026-07-28';
 self.addEventListener('install', function () { self.skipWaiting(); });
 self.addEventListener('activate', function (event) {
   event.waitUntil((async function () {
