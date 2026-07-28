@@ -1,6 +1,9 @@
-// Self-destroying service worker — evicts any offline cache a previous build
-// installed, then auto-reloads to the newest build. Deploy uses
-// --pwa-strategy=none, so new visitors register no service worker at all.
+// Self-destroying service worker — v4 (bump the version on every deploy so a
+// returning device with a stale SW always detects a change and re-runs this).
+// Clears every cache, unregisters itself, and reloads open windows so the
+// newest build loads from the network. Deploy uses --pwa-strategy=none, so new
+// visitors register no service worker at all.
+const KILL_VERSION = 'v4-2026-07-28';
 self.addEventListener('install', function () { self.skipWaiting(); });
 self.addEventListener('activate', function (event) {
   event.waitUntil((async function () {
