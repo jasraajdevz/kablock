@@ -89799,7 +89799,7 @@ q=c[1]
 p=B.c.Z(q-s-r,120,q)
 c=c[0]
 q=d.p1
-q=d.ry=B.c.Z(Math.min(c/(q.a+1.7+0.9),p/(q.b+1.7+0.9)),16,120)
+q=d.ry=B.c.Z(Math.min(c/(q.a+1.1+0.75),p/(q.b+1.1+0.75)),16,120)
 c=d.p1
 o=c.a*q
 n=c.b*q
