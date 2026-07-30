@@ -7,7 +7,7 @@
 // browser always fetches the freshest build straight from the network.
 //
 // Bump KILL_VERSION on every deploy so returning devices re-run activate().
-const KILL_VERSION = 'v11-2026-07-28';
+const KILL_VERSION = 'v12-2026-07-29';
 
 self.addEventListener('install', (event) => {
   // Take over immediately instead of waiting for old tabs to close.
