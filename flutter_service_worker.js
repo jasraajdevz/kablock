@@ -6,7 +6,7 @@
 // unregister itself so the browser always fetches the freshest build.
 //
 // Bump KILL_VERSION on every deploy so returning devices re-run activate().
-const KILL_VERSION = 'v16-2026-07-30';
+const KILL_VERSION = 'v17-2026-07-31';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
