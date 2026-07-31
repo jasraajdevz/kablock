@@ -94039,7 +94039,7 @@ s=p.w
 s===$&&A.a()
 r=A.aS4(s)
 q=A.aNj(r,new A.au7(p),new A.au8(),new A.au9(),p.gamh(),new A.aua(p),A.b7m(),A.b7n())
-q.P4(108,84)
+q.P4(64,16)
 p.Z(new A.aub(p,r,q))},
 gGV(){var s,r
 if(this.Q==null)s=0
@@ -95629,7 +95629,7 @@ A.VP.prototype={
 G(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=j.e,g=h===0?0.6:1,f=j.f
 if(f){s=j.c
 s=A.H(38,s.l()>>>16&255,s.l()>>>8&255,s.l()&255)}else s=$.z.c
-r=A.b8(14)
+r=A.b8(999)
 q=f?j.c:$.z.e
 q=A.c7(q,f?1.4:1)
 f=f?A.eS(j.c,90,10):i

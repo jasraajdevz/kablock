@@ -6,7 +6,7 @@
 // unregister itself so the browser always fetches the freshest build.
 //
 // Bump KILL_VERSION on every deploy so returning devices re-run activate().
-const KILL_VERSION = 'v22-2026-07-31';
+const KILL_VERSION = 'v23-2026-07-31';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -23,9 +23,7 @@ self.addEventListener('activate', (event) => {
     } catch (_) {}
     try {
       const windows = await self.clients.matchAll({ type: 'window' });
-      for (const client of windows) {
-        client.navigate(client.url);
-      }
+      for (const client of windows) { client.navigate(client.url); }
     } catch (_) {}
   })());
 });
