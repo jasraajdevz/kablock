@@ -1,7 +1,7 @@
 // KABLOCK cache KILL-SWITCH service worker.
 // Built with --pwa-strategy=none; this only evicts stale caches/workers then
 // unregisters itself. Bump KILL_VERSION on every deploy.
-const KILL_VERSION = 'v25-2026-07-31';
+const KILL_VERSION = 'v26-2026-07-31';
 self.addEventListener('install', (event) => { self.skipWaiting(); });
 self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
